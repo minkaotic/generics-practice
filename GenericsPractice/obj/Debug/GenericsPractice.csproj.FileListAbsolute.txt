@@ -1,7 +1,0 @@
-C:\Code\#Sandbox\GenericsPractice\GenericsPractice\bin\Debug\GenericsPractice.dll
-C:\Code\#Sandbox\GenericsPractice\GenericsPractice\bin\Debug\GenericsPractice.pdb
-C:\Code\#Sandbox\GenericsPractice\GenericsPractice\bin\Debug\nunit.framework.dll
-C:\Code\#Sandbox\GenericsPractice\GenericsPractice\bin\Debug\nunit.framework.xml
-C:\Code\#Sandbox\GenericsPractice\GenericsPractice\obj\Debug\GenericsPractice.csprojResolveAssemblyReference.cache
-C:\Code\#Sandbox\GenericsPractice\GenericsPractice\obj\Debug\GenericsPractice.dll
-C:\Code\#Sandbox\GenericsPractice\GenericsPractice\obj\Debug\GenericsPractice.pdb

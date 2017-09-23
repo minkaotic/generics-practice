@@ -5,12 +5,14 @@ namespace GenericsPractice
 	[TestFixture]
 	internal class MyGenericClassTests
 	{
+		private MyGenericClass _sut;
+
 		[Test]
 		public void I_can_get_an_item_of_type_string_from_it()
 		{
-			var sut = new MyGenericClass();
+			_sut = new MyGenericClass();
 
-			var getResult = sut.Get();
+			var getResult = _sut.Get();
 
 			Assert.That(getResult, Is.TypeOf<string>());
 		}
