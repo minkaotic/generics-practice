@@ -1,0 +1,17 @@
+.vs
+*ReSharper*
+*.user
+*.suo
+*.dotCover
+*.log
+*.bak
+*.DotSettings
+*.docstates
+*.cache
+TestResult.xml
+obj
+bin
+logs
+
+packages/*
+.nuget/NuGet.exe
