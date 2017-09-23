@@ -44,8 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyGenericClass.cs" />
-    <Compile Include="MyGenericClassTests.cs" />
+    <Compile Include="ItemHolder.cs" />
+    <Compile Include="ItemHolderTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
