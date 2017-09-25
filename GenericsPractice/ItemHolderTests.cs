@@ -8,9 +8,9 @@ namespace GenericsPractice
 		[Test]
 		public void I_can_get_an_item_of_type_string()
 		{
-			var sut = new ItemHolder<string>("randomString");
+			var itemHolder = new ItemHolder<string>("randomString");
 
-			var getResult = sut.Get();
+			var getResult = itemHolder.Get();
 
 			Assert.That(getResult, Is.TypeOf<string>());
 		}
@@ -18,9 +18,9 @@ namespace GenericsPractice
 		[Test]
 		public void I_can_get_an_item_of_type_int()
 		{
-			var sut = new ItemHolder<int>(12);
+			var itemHolder = new ItemHolder<int>(12);
 
-			var getResult = sut.Get();
+			var getResult = itemHolder.Get();
 
 			Assert.That(getResult, Is.TypeOf<int>());
 		}
@@ -28,32 +28,32 @@ namespace GenericsPractice
 		[Test]
 		public void I_can_get_an_item_of_custom_type()
 		{
-			var sut = new ItemHolder<Mias>(new Mias());
+			var itemHolder = new ItemHolder<Mia>(new Mia());
 
-			var mias = sut.Get();
+			var mia = itemHolder.Get();
 
-			Assert.That(mias, Is.TypeOf<Mias>());
-			Assert.That(mias.Cat, Is.EqualTo("Elsie"));
-			Assert.That(mias.Age, Is.EqualTo(34));
+			Assert.That(mia, Is.TypeOf<Mia>());
+			Assert.That(Mia.Cat, Is.EqualTo("Elsie"));
+			Assert.That(Mia.Age, Is.EqualTo(34));
 		}
 
 		[Test]
 		public void I_can_get_multiple_items()
 		{
-			var sut = new MultiItemHolder<string, int>("hi", 100);
+			var multiItemHolder = new MultiItemHolder<string, int>("hi", 100);
 
-			var item1 = sut.GetFirstItem();
-			var item2 = sut.GetSecondItem();
+			var item1 = multiItemHolder.GetFirstItem();
+			var item2 = multiItemHolder.GetSecondItem();
 
 			Assert.That(item1, Is.TypeOf<string>());
 			Assert.That(item2, Is.TypeOf<int>());
 
 		}
 
-		internal class Mias
+		private class Mia
 		{
-			public string Cat { get { return "Elsie"; } }
-			public int Age { get { return 34; } }
+			public static string Cat { get { return "Elsie"; } }
+			public static int Age { get { return 34; } }
 		}
 	}
 }
